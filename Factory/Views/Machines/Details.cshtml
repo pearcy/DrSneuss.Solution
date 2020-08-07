@@ -10,15 +10,20 @@
 
 @if(@Model.Engineers.Count == 0)
 {
-  <p>This Machine does not have any Licensed Engineers</p>
+  <p>This Machine does not have any Licensed Engineers.</p>
 }
 else
 {
-  <h4>Engineers Licensed to Fix These Machines</h4>
+  <h2>@Html.DisplayFor(model => model.Name)'s Engineers:</h2>
   <ul>
   @foreach(var join in Model.Engineers)
   {
-    <li>@join.Engineer.Name</li>
+    <li>@Html.ActionLink($"{join.Engineer.Name}", "Details", "Engineers", new { id = join.EngineerId})</li>
+    @using (Html.BeginForm("DeleteEngineer", "Machines"))
+    {
+      @Html.Hidden("joinId", @join.MachineEngineerId)
+      <input type="submit" value="Delete Engineer"/>
+    }
   }
   </ul>
 }
