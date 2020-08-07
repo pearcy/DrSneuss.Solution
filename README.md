@@ -49,21 +49,16 @@ An application to keep track of Dr. Sneuss's machine repairs. It will be a MVC w
 
 ## Specifications
 
-  | Program Behavior | Example Behavior | Example Output | Met? (Y/N) |
-  | ----------- | ----------- | ----------- | ----------- |
+  | Program Behavior | Example Behavior | Example Output | 
+  | ----------- | ----------- | ----------- | 
   
 
-
-## Stretch Goals
-| Behavior | Input | Output | Met? (Y/N) |
-| ----------- | ----------- | ----------- | ----------- |
 
 
 
 ## Known Bugs
 
-| Location : Message |  Situation  | Resolved (Y/N) |  Bug Resolution Strategy |
-| ----------- | ----------- | ----------- | ----------- |
+
 
 
 
