@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using DrSneuss.Models;
+using Factory.Models;
 
-namespace DrSneuss
+namespace Factory
 {
   public class Startup
   {
@@ -25,7 +25,7 @@ namespace DrSneuss
       services.AddMvc();
 
       services.AddEntityFrameworkMySql()
-        .AddDbContext<DrSneussContext>(options => options
+        .AddDbContext<FactoryContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"]));
     }
 

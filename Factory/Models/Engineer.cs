@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace DrSneuss.Models
+namespace Factory.Models
 {
 
 }
