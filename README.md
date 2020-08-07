@@ -43,7 +43,6 @@ An application to keep track of Dr. Sneuss's machine repairs. It will be a MVC w
   ### Database Setup Instructions
 
   In the Factory folder run these commands to run migrations to create a new database
-  -- dotnet tool install --global dotnet-ef
   -- dotnet ef migrations add Initial
   -- dotnet ef database update
 
