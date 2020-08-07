@@ -20,3 +20,6 @@ namespace Factory.Controllers
       List<Machine> model = _db.Machines.ToList();
       return View(model);
     }
+
+  }
+}
