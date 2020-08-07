@@ -10,11 +10,11 @@
 
 @if(@Model.Engineers.Count == 0)
 {
-  <p>This Machine does not contain any Engineers</p>
+  <p>This Machine does not have any Licensed Engineers</p>
 }
 else
 {
-  <h4>Engineers and Machine Matches</h4>
+  <h4>Engineers Licensed to Fix These Machines</h4>
   <ul>
   @foreach(var join in Model.Engineers)
   {
