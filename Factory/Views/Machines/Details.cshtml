@@ -2,23 +2,25 @@
   Layout = "_Layout";
 }
 
-@using Factory.Models;
 @model Factory.Models.Machine;
 
 <h2>Machine Details</h2>
 <hr />
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
 
-<ul>
-@if (@Model.Engineers.Count == 0)
+@if(@Model.Engineers.Count == 0)
 {
-  <p>No Engineers Found</p>
+  <p>This Machine does not contain any Engineers</p>
+}
+else
+{
+  <h4>Engineers and Machine Matches</h4>
+  <ul>
+  @foreach(var join in Model.Engineers)
+  {
+    <li>@join.Engineer.Name</li>
+  }
+  </ul>
 }
 
-@foreach (Engineer engineer in @Model.Engineers)
-{
-  <li>Name: @engineer.Name</li>
-}
-</ul>
-
-<p>@Html.ActionLink("Back to Machines", "Index")</p>
+<p>@Html.ActionLink("Back to categories", "Index")</p>
