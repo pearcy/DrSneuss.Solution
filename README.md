@@ -24,7 +24,6 @@ An application to keep track of Dr. Sneuss's machine repairs. It will be a MVC w
 
 
 
-
 ## Languages & Technologies Used:
 
   ### Programming Languages, Libraries, & Frameworks
@@ -46,23 +45,27 @@ An application to keep track of Dr. Sneuss's machine repairs. It will be a MVC w
 
 ## Installation
 
-  1.  Download a web browser, such as Apple Safari, Brave, Google Chrome, Microsoft Edge, Mozilla Firefox, or Yandex.
-  2.  Navigate to [Repo Name].
-  3.  Click the green "Clone or download" button at the right of the screen.
-  4.  Select "Download ZIP."
- 
-  6.  In your browser, navigate to https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.2.106-macos-x64-installer for Mac or https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.2.203-windows-x64-installer for Windows and click the link "click here to download manually" if the download for .NET Core 2.2 SDK does not start automatically.
 
-  7.  Double-click the downloaded .NET Core 2.2 SDK file and run the installer.
-  8.  Open your computer's terminal and navigate to the directory bearing the name of the program and containing the top level subdirectories and files.
-  9.  Enter the command "dotnet build" in the terminal.
-  10. Enter the command "dotnet run" in the terminal. The program should begin to run in the console.
+- _Clone or download this repository located at https://github.com/pearcy/DrSneuss.Solution.git
+- _Open the downloaded directory in a text editor of your choice. (VSCode, Atom, etc.)
+- _Run \$ dotnet restore to download all dev dependencies_ Ensure that dotnet restore is targeting the directory containing the .csproj file
 
-  ### Database Setup Instructions
+- _Open the downloaded directory in a text editor of your choice. (VSCode, Atom, etc.)
+- _Run \$ dotnet restore to download all dev dependencies_ Ensure that dotnet restore is targeting the directory containing the .csproj file
+
+- Double-click the downloaded .NET Core 2.2 SDK file and run the installer.
+- Open your computer's terminal and navigate to the directory bearing the name of the program and containing the top level subdirectories and files.
+
+### Database Setup Instructions
 
   In the Factory folder run these commands to run migrations to create a new database
-  - dotnet ef migrations add Initial
-  - dotnet ef database update
+- dotnet ef migrations add Initial
+- dotnet ef database update
+
+### Run Program
+
+- Enter the command "dotnet build" in the terminal.
+- Enter the command "dotnet run" in the terminal. The program should begin to run in the console.
 
 
 ## Known Bugs
